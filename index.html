@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="site-wrapper">
+        <h1 class="heading">Profit Calculator</h1>
+        <h6 class="subheading">This is just a fee calculator and potential profit.<br>Take it as it is.</h6>
+
+        <div class="calculator-wrapper">
+
+            <div id="snipe-amount">
+                <label for="snipeAmount">snipeAmount</label>
+                <input type="number" name="snipeAmount" id="snipeAmount">
+            </div>
+
+            <div id="buy-gas-amount">
+                <label for="buy_gasAmount">buy_gasAmount</label>
+                <input type="number" name="buy_gasAmount" id="buy_gasAmount">
+            </div>
+
+            <div id="buy-gas-price">
+                <label for="buy_gasPrice">buy_gasPrice</label>
+                <input type="number" name="buy_gasPrice" id="buy_gasPrice">
+            </div>
+
+            <div id="sell-gas-amount">
+                <label for="sell_gasAmount">sell_gasAmount</label>
+                <input type="number" name="sell_gasAmount" id="sell_gasAmount">
+            </div>
+
+            <div id="sell-gas-price">
+                <label for="sell_gasPrice">sell_gasPrice</label>
+                <input type="number" name="sell_gasPrice" id="sell_gasPrice">
+            </div>
+
+            <div id="max-buy-fee">
+                <label for="maxBuyFee">maxBuyFee</label>
+                <input type="number" min="1" max="100" name="maxBuyFee" id="maxBuyFee" placeholder="%">
+            </div>
+
+            <div id="max-sell-fee">
+                <label for="maxSellFee">maxSellFee</label>
+                <input type="number" min="1" max="100" name="maxSellFee" id="maxSellFee" placeholder="%">
+            </div>
+
+            <div id="auto-sell-multiplier">
+                <label for="autoSellMultiplier">autoSellMultiplier</label>
+                <input type="number" name="autoSellMultiplier" id="autoSellMultiplier">
+            </div>
+
+            <div id="profit">
+                <div class="profitWrapper">
+                    <p class="profit">Profit: <span class="result" id="result-100"></span></p>
+                    <span class="gasPercentage">100% Gas</span>
+                </div>
+
+                <div class="profitWrapper">
+                    <p class="profit"> Profit: <span class="result" id="result-75"></span></p>
+                    <span class="gasPercentage">75% Gas</span>
+                </div>
+
+                <div class="profitWrapper">
+                    <p class="profit">Profit: <span class="result" id="result-50"></span></p>
+                    <span class="gasPercentage">50% Gas</span>
+                </div>
+            </div>
+
+            <div id="submit">
+                <button id="calculateBtn">Calculate</button>
+                <span class="subtext">the 10% dev fee is included.</span>
+            </div>
+
+        </div>
+        <p class="footer">Made with &#10084; by <a href="https://t.me/lexciobotariu">lexciobotariu</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
